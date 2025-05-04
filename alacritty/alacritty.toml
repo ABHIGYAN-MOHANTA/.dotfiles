@@ -22,6 +22,7 @@ osc52 = "OnlyCopy"
 
 [terminal.shell]
 program = "/bin/zsh"  # or "/bin/bash", "fish", etc.
+args = ["--login", "-i"]  # Forces zsh to run as an interactive login shell
 
 [env]
 TERM = "xterm-256color"
