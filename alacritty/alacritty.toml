@@ -4,7 +4,7 @@ import = ["tokyonight_night.toml"]
 [window]
 dimensions = { columns = 100, lines = 30 }
 padding = { x = 5, y = 5 }
-decorations = "Full"
+decorations = "none"
 startup_mode = "Windowed"
 opacity = 0.50
 blur = true
@@ -34,4 +34,3 @@ save_to_clipboard = true
 style = { shape = "Beam", blinking = "On" }
 blink_interval = 500
 unfocused_hollow = true
-
