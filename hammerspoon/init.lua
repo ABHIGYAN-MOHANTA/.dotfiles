@@ -25,3 +25,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "/", function()
   hs.execute("killall Finder")  -- Restart Finder to apply change
   hs.alert.show("Desktop icons: " .. (newValue == "true" and "Visible" or "Hidden"))
 end)
+
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "b", function()
+  hs.task.new("/usr/bin/open", nil, { "-na", "Google Chrome" }):start()
+end)
