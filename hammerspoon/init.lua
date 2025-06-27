@@ -29,3 +29,7 @@ end)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "b", function()
   hs.task.new("/usr/bin/open", nil, { "-na", "Google Chrome" }):start()
 end)
+
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "s", function()
+  hs.task.new("/usr/bin/open", nil, { "-na", "Spotify" }):start()
+end)
