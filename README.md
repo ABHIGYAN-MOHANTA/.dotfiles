@@ -1,3 +1,4 @@
 # .dotfiles
 
-https://github.com/user-attachments/assets/cf8f98b6-cb4a-4e20-9a1d-6472d1fd22c9
+<img width="1512" height="982" alt="Screenshot 2025-11-12 at 1 22 33 PM" src="https://github.com/user-attachments/assets/812d4b8e-2362-4ccf-b3dd-2364fff1b673" />
+
