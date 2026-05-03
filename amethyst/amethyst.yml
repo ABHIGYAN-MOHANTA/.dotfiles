@@ -17,18 +17,18 @@
 layouts:
   - tall
   - fullscreen
-  # - tall-right
+  - tall-right
   - wide
-  # - two-pane
-  # - middle-wide
+  - two-pane
+  - middle-wide
   # - 3column-left
   # - middle-wide # The legacy name of "3column-middle"
   # - 3column-right
   # - 4column-left
   # - 4column-right
   - column
-  # - row
-  # - floating
+  - row
+  - floating
   # - widescreen-tall
   # - widescreen-tall-right
   # - bsp
@@ -42,9 +42,9 @@ mod1:
 
 # Second mod (default option + shift + control).
 mod2:
-  - option
-  - shift
-  # - control
+  # - option
+  # - shift
+  - control
   # - command
 
 # Commands:
@@ -137,21 +137,6 @@ swap-screen-ccw:
   mod: mod2
   key: h
 
-# Move the currently focused window onto the next screen in the list going clockwise.
-swap-screen-cw:
-  mod: mod2
-  key: l
-
-# Swap the position of the currently focused window with the next window in the list going counter-clockwise.
-swap-ccw:
-  mod: mod2
-  key: j
-
-# Swap the position of the currently focused window with the next window in the list going clockwise.
-swap-cw:
-  mod: mod2
-  key: k
-
 # Swap the position of the currently focused window with the main window in the list.
 swap-main:
   mod: mod1
@@ -162,15 +147,37 @@ swap-main:
 # focus-screen-<screen-number>:
 #   mod: mod1
 #   key: y
-# Move the currently focused window to the n-th screen; e.g., throw-screen-3 will move the window to the 3rd screen.
-# throw-screen-n:
-# throw-screen-<screen-number>:
-#   mod: mod1
-#   key: u
 # Move the currently focused window to the n-th space; e.g., throw-space-3 will move the window to the 3rd space.
-# throw-space-<screen-number>:
-#   mod: mod1
-#   key: i
+throw-space-1:
+  mod: mod1
+  key: '1'
+throw-space-2:
+  mod: mod1
+  key: '2'
+throw-space-3:
+  mod: mod1
+  key: '3'
+throw-space-4:
+  mod: mod1
+  key: '4'
+throw-space-5:
+  mod: mod1
+  key: '5'
+throw-space-6:
+  mod: mod1
+  key: '6'
+throw-space-7:
+  mod: mod1
+  key: '7'
+throw-space-8:
+  mod: mod1
+  key: '8'
+throw-space-9:
+  mod: mod1
+  key: '9'
+throw-space-10:
+  mod: mod1
+  key: '0'
 
 # Select tall layout
 select-tall-layout:
@@ -221,11 +228,6 @@ toggle-tiling:
 reevaluate-windows:
   mod: mod1
   key: z
-
-# Turn on or off focus-follows-mouse.
-toggle-focus-follows-mouse:
-  mod: mod2
-  key: x
 
 # Automatically quit and reopen Amethyst.
 relaunch-amethyst:
@@ -319,3 +321,4 @@ restore-layouts-on-launch: true
 
 # true to display some optional debug information in the layout HUD (default false).
 debug-layout-info: false
+
