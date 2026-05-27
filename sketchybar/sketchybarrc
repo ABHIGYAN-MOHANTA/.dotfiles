@@ -88,11 +88,11 @@ sketchybar --add item front_app left \
 # https://felixkratz.github.io/SketchyBar/config/events
 
 sketchybar --add item clock right \
-           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" padding_left=0 padding_right=0 icon.padding_left=0 icon.padding_right=0 label.padding_left=0 label.padding_right=0
+           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" label.font="Hack Nerd Font:Regular:14.0" padding_left=0 padding_right=0 icon.padding_left=0 icon.padding_right=0 label.padding_left=0 label.padding_right=0
 
 # Add battery after the icons
 sketchybar --add item battery right \
-           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" label.font="Hack Nerd Font:Regular:14.0" \
            --subscribe battery system_woke power_source_change
 
 ##### Force all scripts to run the first time (never do this in a script) #####
